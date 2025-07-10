@@ -32,3 +32,5 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/extforge-phpdebug:php-${{ env.TAG }}
             ${{ secrets.DOCKERHUB_USERNAME }}/extforge-phpdebug:latest
+          build-args: |
+            PHP_VERSION=${{ env.TAG }}
